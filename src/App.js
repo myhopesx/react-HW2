@@ -27,6 +27,12 @@ function App() {
     }
   };
 
+  const onClickRemin = () => {
+    if (num1 !== "" && num2 !== "") {
+      setResult(parseInt(num1) % parseInt(num2));
+    }
+  };
+
   const onClickDiv = () => {
     if (num1 !== "" && num2 !== "") {
       setResult(parseInt(num1) / parseInt(num2));
@@ -55,6 +61,7 @@ function App() {
         onClickDiv={onClickDiv}
         onClickSub={onClickSub}
         onClickMul={onClickMul}
+        onClickRemin={onClickRemin}
       />
       <Result Result={result} />
     </div>
