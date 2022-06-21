@@ -1,0 +1,21 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141111;
+  color: white;
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+
+.btn {
+  font-size: 1.3rem;
+}
+
+.result input {
+  border: none;
+  text-align: center;
+  padding-left: 2rem;
+}
