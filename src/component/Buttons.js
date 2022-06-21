@@ -1,6 +1,6 @@
 import React from "react";
 
-function Buttons({ onClickMul, onClickDiv, onClickAdd, onClickSub }) {
+function Buttons({ onClickMul, onClickDiv, onClickAdd, onClickSub , onClickRemin}) {
   return (
     <div>
       <div className="d-flex flex-row mb-3 w-100">
@@ -36,6 +36,15 @@ function Buttons({ onClickMul, onClickDiv, onClickAdd, onClickSub }) {
             type="button"
             className="btn btn-light w-100"
             onClick={onClickDiv}
+          >
+            /
+          </button>
+        </div>
+        <div className="p-2 w-100">
+          <button
+            type="button"
+            className="btn btn-light w-100"
+            onClick={onClickRemin}
           >
             %
           </button>
